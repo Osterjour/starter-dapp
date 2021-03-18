@@ -23,14 +23,14 @@ export const stakingContract: string =
   'erd1qqqqqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqllls0lczs7';
 
 export const network: NetworkType = {
-  id: 'testnet',
-  name: 'Testnet',
+  id: 'devnet',
+  name: 'Devnet',
   egldLabel: 'xEGLD',
-  walletAddress: 'https://testnet-wallet.elrond.com/dapp/init',
-  apiAddress: 'https://testnet-api.elrond.com',
-  gatewayAddress: 'https://testnet-gateway.elrond.com',
-  explorerAddress: 'http://testnet-explorer.elrond.com/',
-  delegationContract: 'erd1qqqqqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqphllllsndz99p',
+  walletAddress: 'https://devnet-wallet.elrond.com/dapp/init',
+  apiAddress: 'https://devnet-api.elrond.com',
+  gatewayAddress: 'https://devnet-gateway.elrond.com',
+  explorerAddress: 'http://devnet-explorer.elrond.com/',
+  delegationContract: 'erd1qqqqqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqhllllsajxzat',
 };
 
 const networkSchema = object({

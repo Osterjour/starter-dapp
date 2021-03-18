@@ -7,7 +7,6 @@ import { useContext } from 'context';
 import Denominate from 'components/Denominate';
 import { entireBalance } from 'helpers';
 import { denomination, decimals } from 'config';
-import denominate from 'components/Denominate/formatters';
 
 interface DelegateModalType {
   show: boolean;
@@ -102,6 +101,7 @@ const DelegateModal = ({ show, balance, handleClose, handleContinue }: DelegateM
                           id="amount"
                           name="amount"
                           data-testid="amount"
+                          step={'any'}
                           required={true}
                           value={values.amount}
                           autoComplete="off"
