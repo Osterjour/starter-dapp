@@ -61,7 +61,6 @@ const Views = () => {
           input: totalActiveStake,
           denomination,
           decimals,
-          showLastNonZeroDecimal: false,
         })}
         valueUnit={egldLabel}
         color="orange"
@@ -71,13 +70,11 @@ const Views = () => {
             input: totalActiveStake,
             denomination,
             decimals,
-            showLastNonZeroDecimal: false,
           }),
           denominate({
             input: networkStake.TotalStaked.toFixed(),
             denomination,
             decimals,
-            showLastNonZeroDecimal: false,
           })
         )}% of total stake`}
       />
@@ -100,7 +97,7 @@ const Views = () => {
         color="orange"
         svg="leaf-solid.svg"
         percentage="Annual percentage rate"
-        tooltipText="This is an aproximate APR calculation for this year based on the current epoch"
+        tooltipText="This is an approximate APR calculation for this year based on the current epoch"
       />
       <StatCard
         title="Service Fee"
@@ -119,7 +116,6 @@ const Views = () => {
               decimals,
               denomination,
               input: contractOverview.maxDelegationCap,
-              showLastNonZeroDecimal: false,
             }) || ''
           }
           valueUnit={egldLabel}
@@ -130,13 +126,11 @@ const Views = () => {
               input: totalActiveStake,
               denomination,
               decimals,
-              showLastNonZeroDecimal: false,
             }),
             denominate({
               decimals,
               denomination,
               input: contractOverview.maxDelegationCap,
-              showLastNonZeroDecimal: false,
             })
           )}% filled`}
         >
@@ -147,13 +141,11 @@ const Views = () => {
           decimals,
           denomination,
           input: contractOverview.maxDelegationCap,
-          showLastNonZeroDecimal: false,
         }) !== '0' &&
         denominate({
           decimals,
           denomination,
           input: contractOverview.maxDelegationCap,
-          showLastNonZeroDecimal: false,
         }) !== '' && (
           <StatCard
             title="Delegation Cap"
@@ -162,7 +154,6 @@ const Views = () => {
                 decimals,
                 denomination,
                 input: contractOverview.maxDelegationCap,
-                showLastNonZeroDecimal: false,
               }) || ''
             }
             valueUnit={egldLabel}
@@ -173,13 +164,11 @@ const Views = () => {
                 input: totalActiveStake,
                 denomination,
                 decimals,
-                showLastNonZeroDecimal: false,
               }),
               denominate({
                 decimals,
                 denomination,
                 input: contractOverview.maxDelegationCap,
-                showLastNonZeroDecimal: false,
               })
             )}% filled`}
           ></StatCard>
