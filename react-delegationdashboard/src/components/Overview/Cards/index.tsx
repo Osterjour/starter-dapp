@@ -95,15 +95,17 @@ const Views = () => {
           networkStake.TotalValidators.toString()
         )}% of total nodes`}
       />
-      <StatCard
-        title="Computed APR"
-        value={aprPercentage}
-        valueUnit=""
-        color="orange"
-        svg="leaf-solid.svg"
-        percentage="Annual percentage rate"
-        tooltipText="This is an approximate APR calculation for this year based on the current epoch"
-      />
+      {isOwner() && isOwnerPath() && (
+          <StatCard
+              title="Computed APR"
+              value={aprPercentage}
+              valueUnit=""
+              color="orange"
+              svg="leaf-solid.svg"
+              percentage="Annual percentage rate"
+              tooltipText="This is an approximate APR calculation for this year based on the current epoch"
+          />
+      )}
       <StatCard
         title="Service Fee"
         value={contractOverview.serviceFee || ''}

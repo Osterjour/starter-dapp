@@ -41,7 +41,7 @@ const routes: RouteType[] = [
 
 const wrappedRoutes = () => {
   return routes.map(route => {
-    const title = route.title ? `${route.title} • Delegation Manager` : 'Delegation Manager';
+    const title = route.title ? `${route.title} • ProCrypto Delegation Manager` : 'ProCrypto Delegation Manager';
     return {
       path: route.path,
       page: route.page,
