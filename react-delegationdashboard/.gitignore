@@ -12,6 +12,7 @@
 
 # production
 /build
+/mainnet-old
 
 # misc
 .DS_Store
